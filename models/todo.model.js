@@ -6,7 +6,7 @@ let Todo = new Schema({
     type: String
   },
   created_time: {
-    type: String
+    type: Date
   },
   todo_description: {
     type: String

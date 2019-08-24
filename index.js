@@ -10,6 +10,7 @@ const dotenv = require('dotenv').config();
 //routes
 const usersRoute = require("./routes/user.route");
 const todoRoute = require("./routes/todo.route");
+const newsRoute = require("./routes/news.route");
 
 
 
@@ -32,6 +33,10 @@ app.use(bodyParser.json());
 //use users route for api/users
 app.use("/api/users", usersRoute);
 app.use('/api/todos', todoRoute);
+app.use('/api/news', newsRoute);
+
+// print health
+// setInterval(() => { console.log(Date()) }, 1000);
 
 const port = process.env.PORT || 5000;
 app.listen(port || 5000, () => {
