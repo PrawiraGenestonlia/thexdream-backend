@@ -30,6 +30,9 @@ app.use(cors());
 app.use(bodyParser.json());
 // app.use(express.json());
 
+app.use("/status", (req, res) => {
+  res.json({ status: "alive" });
+})
 //use users route for api/users
 app.use("/api/users", usersRoute);
 app.use('/api/todos', todoRoute);

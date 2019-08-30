@@ -15,7 +15,7 @@ setInterval(() => {
 
 router.get("/", async (req, res) => {
 
-  res.send("news");
+  res.status(200).send(SgTopNews);
 });
 
 module.exports = router; 
