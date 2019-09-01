@@ -14,8 +14,15 @@ setInterval(() => {
 }, 300000);
 
 router.get("/", async (req, res) => {
-
   res.status(200).send(SgTopNews);
 });
+
+router.post("/read"), async (req, res) => {
+  var response;
+  var url = req.body.url;
+  response.url = url;
+  //node-readability
+  res.status(200).send(response);
+}
 
 module.exports = router; 
