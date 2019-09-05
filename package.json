@@ -25,6 +25,7 @@
     "joi": "^14.3.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.6.9",
+    "node-readability": "^3.0.0",
     "nodemon": "^1.19.1"
   }
 }
